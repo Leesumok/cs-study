@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#FFFAF0"/>
+  <path d="M0 502C172 448 316 456 457 500C608 548 745 562 895 518C1006 486 1099 487 1200 516V630H0V502Z" fill="#E7EFD9"/>
+  <path d="M0 536C174 495 335 502 498 536C658 570 805 582 960 546C1046 526 1131 526 1200 545V630H0V536Z" fill="#DCEBC9"/>
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#FFFDF6" stroke="#D8C89B" stroke-width="3"/>
+  <path d="M203 448V250" stroke="#5D7F48" stroke-width="24" stroke-linecap="round"/>
+  <path d="M194 259C98 257 49 202 68 128C149 117 205 164 194 259Z" fill="#B8D9A5"/>
+  <path d="M223 289C332 284 384 222 359 143C269 140 209 194 223 289Z" fill="#7EAF86"/>
+  <path d="M203 448C157 448 121 464 98 500" stroke="#B49B5B" stroke-width="24" stroke-linecap="round"/>
+  <path d="M203 448C249 448 285 464 308 500" stroke="#B49B5B" stroke-width="24" stroke-linecap="round"/>
+  <path d="M1000 142C948 178 920 224 916 280" stroke="#D4BE80" stroke-width="11" stroke-linecap="round"/>
+  <path d="M916 280C878 249 852 215 838 178C895 170 927 207 916 280Z" fill="#DCEBC9"/>
+  <path d="M916 280C964 254 997 219 1014 174C956 165 919 204 916 280Z" fill="#B8D9A5"/>
+  <text x="420" y="267" fill="#29412D" font-family="'Gowun Batang', 'Apple SD Gothic Neo', serif" font-size="124" font-weight="700">수목원</text>
+  <text x="426" y="354" fill="#4E5635" font-family="'Gowun Dodum', 'Apple SD Gothic Neo', sans-serif" font-size="42">이수목의 공부 위키</text>
+  <text x="426" y="430" fill="#6D6A3D" font-family="'Gowun Dodum', 'Apple SD Gothic Neo', sans-serif" font-size="34">CS, AI, 실습 기록이 자라는 곳</text>
+</svg>

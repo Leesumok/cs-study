@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap');
+
+:root {
+  --ifm-color-primary: #3f7f4a;
+  --ifm-color-primary-dark: #356c40;
+  --ifm-color-primary-darker: #2f6139;
+  --ifm-color-primary-darkest: #244b2d;
+  --ifm-color-primary-light: #5d9667;
+  --ifm-color-primary-lighter: #7eaf86;
+  --ifm-color-primary-lightest: #dbeed5;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base:
+    'Gowun Dodum',
+    'Apple SD Gothic Neo',
+    'Malgun Gothic',
+    system-ui,
+    sans-serif;
+  --ifm-heading-font-family:
+    'Gowun Batang',
+    'Gowun Dodum',
+    'Apple SD Gothic Neo',
+    serif;
+  --ifm-font-color-base: #2f3527;
+  --ifm-heading-letter-spacing: 0;
+  --ifm-heading-color: #29412d;
+  --ifm-background-color: #fffaf0;
+  --ifm-background-surface-color: #fffdf6;
+  --ifm-footer-background-color: #263f2b;
+  --ifm-navbar-background-color: #fffaf0;
+  --ifm-menu-color-background-active: #eef7e7;
+  --ifm-menu-color-background-hover: #f5f0df;
+  --ifm-link-color: #2f6f43;
+  --ifm-breadcrumb-color-active: #315f3a;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #b8d9a5;
+  --ifm-color-primary-dark: #94bc82;
+  --ifm-color-primary-darker: #7eaa70;
+  --ifm-color-primary-darkest: #5f8a55;
+  --ifm-color-primary-light: #d3e7c4;
+  --ifm-color-primary-lighter: #e7f2dc;
+  --ifm-color-primary-lightest: #f7fbf2;
+  --ifm-font-color-base: #ece6d5;
+  --ifm-heading-color: #f4ecd8;
+  --ifm-background-color: #101810;
+  --ifm-background-surface-color: #172117;
+  --ifm-navbar-background-color: #101810;
+  --ifm-menu-color-background-active: #213323;
+  --ifm-menu-color-background-hover: #1d2a1d;
+}
+
+.navbar__title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.button {
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.button--primary {
+  background: #3f7f4a;
+  border-color: #3f7f4a;
+  color: #fffaf0;
+}
+
+.button--primary:hover {
+  background: #356c40;
+  border-color: #356c40;
+}
+
+.button--secondary {
+  background: #fffdf6;
+  border-color: #d9c99e;
+  color: #36533a;
+}
+
+.button--secondary:hover {
+  background: #f7efd9;
+  border-color: #c7b47d;
+  color: #29412d;
+}
+
+.navbar {
+  background: #fffaf0;
+  border-bottom: 1px solid #e5d9b8;
+  box-shadow: 0 6px 20px rgb(72 65 36 / 5%);
+}
+
+[data-theme='dark'] .navbar {
+  background: #101810;
+  border-bottom-color: #2d432f;
+  box-shadow: none;
+}
+
+.menu__link--active,
+.menu__link:hover {
+  color: #315f3a;
+}
+
+.theme-doc-markdown {
+  line-height: 1.82;
+}
+
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3 {
+  color: #29412d;
+}
+
+[data-theme='dark'] .theme-doc-markdown h1,
+[data-theme='dark'] .theme-doc-markdown h2,
+[data-theme='dark'] .theme-doc-markdown h3 {
+  color: #f4ecd8;
+}
+
+.table-of-contents__link--active,
+.table-of-contents__link:hover {
+  color: #315f3a;
+}

@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.searchBox {
+  background: var(--ifm-background-surface-color);
+  padding: 0 0.5rem 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.input {
+  background: #fffaf0;
+  border: 1px solid #d8c89b;
+  border-radius: 8px;
+  color: var(--ifm-font-color-base);
+  font-size: 0.86rem;
+  height: 2.25rem;
+  outline: none;
+  padding: 0 0.75rem;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgb(63 127 74 / 18%);
+}
+
+.input::placeholder {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.empty {
+  color: #66613e;
+  font-size: 0.84rem;
+  padding: 0.4rem 0.75rem 0.8rem;
+}
+
+[data-theme='dark'] .input {
+  background: #172117;
+  border-color: #42593a;
+}

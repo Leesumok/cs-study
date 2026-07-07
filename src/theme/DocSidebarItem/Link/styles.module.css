@@ -1,0 +1,23 @@
+.menuExternalLink {
+  align-items: center;
+}
+
+.sidebarLink {
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.linkLabel {
+  display: -webkit-box;
+  line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.sidebarBadge {
+  flex: 0 0 auto;
+  transform: scale(0.86);
+  transform-origin: center;
+}
+
