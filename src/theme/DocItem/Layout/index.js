@@ -12,6 +12,7 @@ import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import ContentVisibility from '@theme/ContentVisibility';
 import NewBadge from '@site/src/components/NewBadge';
+import PublishedAt from '@site/src/components/PublishedAt';
 import styles from './styles.module.css';
 
 function useDocTOC() {
@@ -43,6 +44,18 @@ function DocNewBadge() {
   );
 }
 
+function DocPublishedAt() {
+  const {frontMatter} = useDoc();
+  const publishedAt = frontMatter.published_at;
+
+  return (
+    <PublishedAt
+      value={publishedAt ?? frontMatter.created_at}
+      includeTime={Boolean(publishedAt)}
+    />
+  );
+}
+
 export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
   const {metadata} = useDoc();
@@ -57,6 +70,7 @@ export default function DocItemLayout({children}) {
             <DocBreadcrumbs />
             <DocVersionBadge />
             <DocNewBadge />
+            <DocPublishedAt />
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
@@ -68,4 +82,3 @@ export default function DocItemLayout({children}) {
     </div>
   );
 }
-

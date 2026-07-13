@@ -57,6 +57,10 @@ const sidebars = {
               'ai/generative-ai-basics/1-1-llm-overview',
               'ai/01-generative-ai-basics/1-1-llm-overview.md',
             ),
+            doc(
+              'ai/generative-ai-basics/1-2-llm-capabilities-and-limitations',
+              'ai/01-generative-ai-basics/1-2-llm-capabilities-and-limitations.md',
+            ),
           ],
         },
         {

@@ -1,0 +1,9 @@
+.publishedAt {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.82rem;
+  margin: 0 0 0.75rem;
+}
+
+.label {
+  font-weight: 700;
+}
