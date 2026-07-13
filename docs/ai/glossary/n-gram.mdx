@@ -1,0 +1,22 @@
+---
+title: N-gram
+created_at: 2026-07-13
+---
+
+import BackToPrevious from '@site/src/components/BackToPrevious';
+
+# N-gram
+
+**N-gram**은 문장에서 연속으로 등장하는 `N`개의 단어나 토큰을 하나의 묶음으로 보는 방식입니다.
+
+`나는 학교에 간다`라는 문장을 단어 기준으로 나누면 다음과 같습니다.
+
+- 1-gram: `나는`, `학교에`, `간다`
+- 2-gram: `나는 학교에`, `학교에 간다`
+- 3-gram: `나는 학교에 간다`
+
+전통적인 N-gram 언어 모델은 바로 앞의 몇 개 단어가 주어졌을 때 다음 단어가 등장할 확률을 말뭉치의 빈도로 계산합니다. 예를 들어 `학교에` 다음에 `간다`가 자주 등장했다면 그 조합에 높은 확률을 줍니다.
+
+구조가 단순하고 계산 결과를 이해하기 쉽지만, `N`보다 멀리 떨어진 단어의 관계를 반영하기 어렵습니다. 학습 데이터에 없던 조합의 확률을 구하기 어렵고, `N`이 커질수록 저장해야 할 조합도 급격히 늘어납니다.
+
+<BackToPrevious fallbackPath="/docs/ai/generative-ai-basics/1-1-llm-overview" />

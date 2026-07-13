@@ -1,0 +1,37 @@
+---
+title: Zero-shot과 Few-shot
+created_at: 2026-07-13
+---
+
+import BackToPrevious from '@site/src/components/BackToPrevious';
+
+# Zero-shot과 Few-shot
+
+**Zero-shot**과 **Few-shot**은 모델에 작업을 요청할 때 프롬프트 안에 예시를 얼마나 제공하는지 나타내는 방식입니다.
+
+### Zero-shot
+
+예시 없이 지시만 제공합니다.
+
+```text
+다음 문장의 감정을 긍정 또는 부정으로 분류해줘.
+문장: 배송이 빠르고 제품도 마음에 들어.
+```
+
+### Few-shot
+
+모델이 원하는 규칙과 출력 형식을 파악할 수 있도록 몇 개의 예시를 함께 제공합니다.
+
+```text
+배송이 늦었어. → 부정
+품질이 정말 좋아. → 긍정
+가격에 비해 아쉬워. → 부정
+
+배송이 빠르고 제품도 마음에 들어. → ?
+```
+
+예시가 하나라면 **One-shot**이라고 부릅니다. 이 방식들은 보통 모델의 파라미터를 다시 학습시키지 않고, 현재 프롬프트의 문맥 안에서 작업을 수행하게 하는 **인컨텍스트 학습(in-context learning)** 에 해당합니다.
+
+Few-shot이 항상 더 좋은 것은 아닙니다. 잘못되거나 서로 모순되는 예시는 오히려 결과를 나쁘게 만들 수 있으므로 실제 작업과 비슷하고 일관된 예시를 제공해야 합니다.
+
+<BackToPrevious fallbackPath="/docs/ai/generative-ai-basics/1-1-llm-overview" />

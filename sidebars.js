@@ -43,6 +43,41 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'AI',
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: '01. 생성형 AI 핵심 개념',
+          collapsed: true,
+          items: [
+            doc(
+              'ai/generative-ai-basics/1-1-llm-overview',
+              'ai/01-generative-ai-basics/1-1-llm-overview.md',
+            ),
+          ],
+        },
+        {
+          type: 'category',
+          label: '용어집',
+          collapsed: true,
+          items: [
+            doc('ai/glossary/n-gram', 'ai/glossary/n-gram.mdx'),
+            doc('ai/glossary/embedding', 'ai/glossary/embedding.mdx'),
+            doc('ai/glossary/attention', 'ai/glossary/attention.mdx'),
+            doc('ai/glossary/rnn', 'ai/glossary/rnn.mdx'),
+            doc(
+              'ai/glossary/zero-shot-few-shot',
+              'ai/glossary/zero-shot-few-shot.mdx',
+            ),
+            doc('ai/glossary/rag', 'ai/glossary/rag.mdx'),
+            doc('ai/glossary/multimodal', 'ai/glossary/multimodal.mdx'),
+          ],
+        },
+      ],
+    },
   ],
 };
 

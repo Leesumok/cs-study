@@ -1,0 +1,25 @@
+.container {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.button {
+  padding: 0;
+  border: 0;
+  color: var(--ifm-link-color);
+  background: transparent;
+  font: inherit;
+  font-weight: var(--ifm-font-weight-semibold);
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+}
